@@ -29,3 +29,5 @@ so here, I choose to maintain the integrity of the database structure. that's wh
   Above, we defined a document name, which has a colletion with two keys:length and country, if you do the following operation
   db.insert_collection('name', {'length' : 0}), it will throw the exception, maybe you think it should be work, because 
   when the collection's keys' number are too many,it will be comlex to write the insert data format.It's my fault, ok.
+
+        the mon_config.py contains the defenition of one of my project.
