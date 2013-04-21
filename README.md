@@ -15,7 +15,6 @@ so here, I choose to maintain the integrity of the database structure. that's wh
    when you insert a collection which structure is not the same as the document, it will throw the exception of different
 .so before developping, the structure of db should be defined in mon_config.py.just like:
  
- '''java
   
     COLLECTION_NAME = {
     'name':
@@ -24,10 +23,8 @@ so here, I choose to maintain the integrity of the database structure. that's wh
           'country' : ''
            
         }
-         
+      }
    
-  }
-  '''
    
   Above, we defined a document name, which has a colletion with two keys:length and country, if you do the following operation
   db.insert_collection('name', {'length' : 0}), it will throw the exception, maybe you think it should be work, because 
