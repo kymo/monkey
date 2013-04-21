@@ -17,10 +17,8 @@ so here, I choose to maintain the integrity of the database structure. that's wh
  
  '''java
   
-  COLLECTION_NAME = {
-   
-   'name':
-    
+    COLLECTION_NAME = {
+    'name':
         {'length': 0,
          
           'country' : ''
