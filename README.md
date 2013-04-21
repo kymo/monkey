@@ -13,12 +13,14 @@ it means the structure design of the database can be wiped out from the developp
 so here, I choose to maintain the integrity of the database structure. that's why the plugin is developped./n
    when you insert a collection which structure is not the same as the document, it will throw the exception of different
 .so before developping, the structure of db should be defined in mon_config.py.just like:/n
+  '''java
   COLLECTION_NAME = {/n
       'name':/n
-        {'length': 0,/n
-          'country' : ''/n
-        }/n
-  }/n
+        {'length': 0,
+          'country' : ''
+        }
+  }
+  '''
   Above, we defined a document name, which has a colletion with two keys:length and country, if you do the following operation
   db.insert_collection('name', {'length' : 0}), it will throw the exception, maybe you think it should be work, because 
   when the collection's keys' number are too many,it will be comlex to write the insert data format.It's my fault, ok.
